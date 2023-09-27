@@ -79,15 +79,15 @@
 <div class="flex justify-center items-center p-4">
 	<div class="m-11 card h-full w-3/4">
 		<div class="p-4 md:p-10">
-			<h1>🤖 DocsBot</h1>
+			<h1>🤖 CanónicoBot</h1>
 			<br />
-			<h3 class="mb-3">Your bot is ready!</h3>
-			<p class="text-xl mb-2">You can start asking:</p>
+			<h3 class="mb-3">Estamos listos!</h3>
+			<p class="text-xl mb-2">Puedes iniciar a construir tu mensaje cananónico, solo preguntando:</p>
 			<div class="flex">
 				<input
 					class="input text-xl"
 					type="text"
-					placeholder="your question here"
+					placeholder="pregunta aqui"
 					bind:value={query}
 				/>
 				<button
@@ -122,8 +122,8 @@
 						<p class="text-xl mb-2 mt-6">Documents:</p>
 						{#each documents as document, i}
 							<div class="flex flex-col">
-								<CodeBlock language="markdown" code={document} />
-								<p class="mt-2">Source file: {metadatas[i].file_name}</p>
+								<CodeBlock language="Contenido" code={document} />
+								<p class="mt-2">Archivo de consulta : <a href="{metadatas[i].file_name}">url consulta</a></p>
 							</div>
 							<br />
 						{/each}

@@ -1,0 +1,161 @@
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://10.1.1.4:5000/ (Press CTRL+C to quit)
+[2023-09-26 20:58:30,253] ERROR in app: Exception on /query [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/azureuser/.local/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/azureuser/canonico/docsbot/backend/app.py", line 21, in query
+    results = query_collection(query)
+  File "/home/azureuser/canonico/docsbot/backend/process.py", line 52, in query_collection
+    chroma_client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet",
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/__init__.py", line 140, in Client
+    system = System(settings)
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/config.py", line 243, in __init__
+    if settings[key] is not None:
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/config.py", line 180, in __getitem__
+    raise ValueError(LEGACY_ERROR)
+ValueError: [91mYou are using a deprecated configuration of Chroma.
+
+[94mIf you do not have data you wish to migrate, you only need to change how you construct
+your Chroma client. Please see the "New Clients" section of https://docs.trychroma.com/migration.
+________________________________________________________________________________________________
+
+If you do have data you wish to migrate, we have a migration tool you can use in order to
+migrate your data to the new Chroma architecture.
+Please `pip install chroma-migrate` and run `chroma-migrate` to migrate your data and then
+change how you construct your Chroma client.
+
+See https://docs.trychroma.com/migration for more information or join our discord at https://discord.gg/8g5FESbj for help![0m
+179.1.111.19 - - [26/Sep/2023 20:58:30] "GET /query HTTP/1.1" 500 -
+[2023-09-26 21:47:05,706] ERROR in app: Exception on /query [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/azureuser/.local/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/azureuser/canonico/docsbot/backend/app.py", line 21, in query
+    results = query_collection(query)
+  File "/home/azureuser/canonico/docsbot/backend/process.py", line 52, in query_collection
+    chroma_client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet",
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/__init__.py", line 140, in Client
+    system = System(settings)
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/config.py", line 243, in __init__
+    if settings[key] is not None:
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/config.py", line 180, in __getitem__
+    raise ValueError(LEGACY_ERROR)
+ValueError: [91mYou are using a deprecated configuration of Chroma.
+
+[94mIf you do not have data you wish to migrate, you only need to change how you construct
+your Chroma client. Please see the "New Clients" section of https://docs.trychroma.com/migration.
+________________________________________________________________________________________________
+
+If you do have data you wish to migrate, we have a migration tool you can use in order to
+migrate your data to the new Chroma architecture.
+Please `pip install chroma-migrate` and run `chroma-migrate` to migrate your data and then
+change how you construct your Chroma client.
+
+See https://docs.trychroma.com/migration for more information or join our discord at https://discord.gg/8g5FESbj for help![0m
+179.1.111.19 - - [26/Sep/2023 21:47:05] "GET /query?text=hola HTTP/1.1" 500 -
+[2023-09-26 21:49:33,456] ERROR in app: Exception on /query [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/azureuser/.local/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/azureuser/canonico/docsbot/backend/app.py", line 21, in query
+    results = query_collection(query)
+  File "/home/azureuser/canonico/docsbot/backend/process.py", line 52, in query_collection
+    chroma_client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet",
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/__init__.py", line 140, in Client
+    system = System(settings)
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/config.py", line 243, in __init__
+    if settings[key] is not None:
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/config.py", line 180, in __getitem__
+    raise ValueError(LEGACY_ERROR)
+ValueError: [91mYou are using a deprecated configuration of Chroma.
+
+[94mIf you do not have data you wish to migrate, you only need to change how you construct
+your Chroma client. Please see the "New Clients" section of https://docs.trychroma.com/migration.
+________________________________________________________________________________________________
+
+If you do have data you wish to migrate, we have a migration tool you can use in order to
+migrate your data to the new Chroma architecture.
+Please `pip install chroma-migrate` and run `chroma-migrate` to migrate your data and then
+change how you construct your Chroma client.
+
+See https://docs.trychroma.com/migration for more information or join our discord at https://discord.gg/8g5FESbj for help![0m
+179.1.111.19 - - [26/Sep/2023 21:49:33] "GET /query?text=hi HTTP/1.1" 500 -
+[2023-09-26 21:50:52,276] ERROR in app: Exception on /process [POST]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/azureuser/.local/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/azureuser/canonico/docsbot/backend/app.py", line 13, in process
+    process_files(documents)
+  File "/home/azureuser/canonico/docsbot/backend/process.py", line 9, in process_files
+    chroma_client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet",
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/__init__.py", line 140, in Client
+    system = System(settings)
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/config.py", line 243, in __init__
+    if settings[key] is not None:
+  File "/home/azureuser/.local/lib/python3.10/site-packages/chromadb/config.py", line 180, in __getitem__
+    raise ValueError(LEGACY_ERROR)
+ValueError: [91mYou are using a deprecated configuration of Chroma.
+
+[94mIf you do not have data you wish to migrate, you only need to change how you construct
+your Chroma client. Please see the "New Clients" section of https://docs.trychroma.com/migration.
+________________________________________________________________________________________________
+
+If you do have data you wish to migrate, we have a migration tool you can use in order to
+migrate your data to the new Chroma architecture.
+Please `pip install chroma-migrate` and run `chroma-migrate` to migrate your data and then
+change how you construct your Chroma client.
+
+See https://docs.trychroma.com/migration for more information or join our discord at https://discord.gg/8g5FESbj for help![0m
+179.1.111.19 - - [26/Sep/2023 21:50:52] "POST /process HTTP/1.1" 500 -
+127.0.0.1 - - [26/Sep/2023 22:17:15] "POST /?wait_end_of_query=1 HTTP/1.1" 404 -

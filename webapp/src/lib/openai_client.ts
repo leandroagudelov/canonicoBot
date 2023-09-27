@@ -11,15 +11,15 @@ export async function createChatCompletion(
 	question: string
 ): Promise<string | null> {
 	let messages = [];
-	let systemContent = `You are a Rust programming language AI helper, you are an expert in Rust programming language. 
-		You get your knowledge about Rust from the following information delimited between three ticks.`;
+	let systemContent = `You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. 
+		You get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.`;
 
 	systemContent += '\n\n```';
 	for (let i = 0; i < document.length; i++) {
 		systemContent += '\n' + document[i];
 	}
 	systemContent +=
-		'\n```\n\nThe user will ask you questions about Rust programming language and you should reply in a concise way and include code snippets whenever you can.';
+		'\n```\n\nThe user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.';
 
 	messages.push({
 		role: 'system',
