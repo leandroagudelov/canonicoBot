@@ -1,0 +1,18 @@
+nohup: ignoring input
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://10.1.1.4:5000/ (Press CTRL+C to quit)
+179.1.111.18 - - [03/Oct/2023 13:39:14] "GET /query?text=Si%20yo%20modifico%20la%20entidad%20clientes;%20cuantas%20entidades%20se%20pueden%20ver%20impactadas HTTP/1.1" 200 -
+179.1.111.18 - - [03/Oct/2023 13:39:18] "GET /query?text=Si%20yo%20modifico%20la%20entidad%20clientes;%20cuantas%20entidades%20se%20pueden%20ver%20impactadas HTTP/1.1" 200 -
+179.1.111.18 - - [03/Oct/2023 13:39:18] "GET /query?text=Si%20yo%20modifico%20la%20entidad%20clientes;%20cuantas%20entidades%20se%20pueden%20ver%20impactadas HTTP/1.1" 200 -
+179.1.111.18 - - [03/Oct/2023 13:39:18] "GET /query?text=Si%20yo%20modifico%20la%20entidad%20clientes;%20cuantas%20entidades%20se%20pueden%20ver%20impactadas HTTP/1.1" 200 -
+179.1.111.18 - - [03/Oct/2023 13:42:58] "GET /query?text=presentar%20en%20un%20json%20las%20entidades%20relacionadas%20con%20cliente HTTP/1.1" 200 -
+179.1.111.18 - - [03/Oct/2023 14:56:42] "GET /query?text=actualmente%20hay%20un%20servicio%20que%20actualiza%20en%20los%20e-commerce%20el%20estado%20de%20la%20Orden,%20el%20caso%20es%20que%20se%20actualiza%20en%20los%20e-commerce%20el%20estado%20%22Facturado%22%20y%20tengo%20duda%20si%20debo%20dejarlo%20sobre%20la%20API%20Despachos%20o%20Pedidos? HTTP/1.1" 200 -
+179.1.111.18 - - [03/Oct/2023 14:59:37] "GET /query?text=actualmente%20hay%20un%20servicio%20rest%20que%20actualiza%20en%20los%20e-commerce%20el%20estado%20de%20la%20Orden,%20el%20caso%20es%20que%20se%20actualiza%20en%20los%20e-commerce%20el%20estado%20%22Facturado%22%20y%20tengo%20duda%20si%20debo%20dejarlo%20sobre%20la%20API%20Despachos%20o%20Pedidos? HTTP/1.1" 200 -
+179.1.111.18 - - [03/Oct/2023 15:01:05] "GET /query?text=Sobre%20que%20entidad%20Despachos%20o%20Pedidos%20se%20debe%20dejar%20el%20estado%20del%20%20e-commerce%20el%20estado%20%22Facturado%22%20? HTTP/1.1" 200 -
+179.1.111.18 - - [03/Oct/2023 15:46:31] "GET /query?text=cuales%20entidades%20pueden%20tener%20propósitos%20similares%20dentro%20del%20modelo%20canonico%20definido HTTP/1.1" 200 -

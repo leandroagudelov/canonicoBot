@@ -1,0 +1,1079 @@
+nohup: ignoring input
+
+> docsbot@0.0.1 preview
+> vite preview "--host" "0.0.0.0" "--port" "4173"
+
+
+  ➜  Local:   http://localhost:4173/
+  ➜  Network: http://10.1.1.4:4173/
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: clienteUnidadNegocio.\r\n' +
+      'Descripcion Entidad: Entidad para registrar la información de las unidades de negocio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteUnidadNegocio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Estado del cliente para la unidad de negocio\\nActivo\\nInactivo"; \r\n' +
+      '"grupoNegocioId": "FK grupo_negocio"; \r\n' +
+      '"codigoUnidadNegocio": "Código único que identifica una unidad de negocio de Colombiana de Comercio"; \r\n' +
+      '"clienteUnidadNegocioId": "PK llave primaria"; \r\n' +
+      '"clienteId": "FK cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: clienteDetalle.\r\n' +
+      'Descripcion Entidad: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteDetalle\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"clienteId": "atributo que permite identificar el cliente"; \r\n' +
+      '"dependientes": "Indica la cantidad de personas a cargo o dependientes"; \r\n' +
+      '"fax": "Número de fax del cliente"; \r\n' +
+      '"tipoResponsabilidad": "Tipo de responsabilidad fiscal - facturación electrónica\\n1 Aporte especial para la administración de justicia\\n2   Gravamen a los movimientos financieros\\n3   Impuesto al patrimonio\\n4   Impuesto renta y complementario régimen especial\\n5 Impuesto renta y complementario régimen ordinario\\n6    Ingresos y patrimonio\\n7    Retención en la fuente a título de renta\\n8 Retención timbre nacional\\n9    Retención en la fuente en el impuesto sobre las ventas\\n10  Obligado aduanero\\n13   Gran contribuyente\\n14  Informante de exógena\\n15   Autorretenedor\\n16  Obligación facturar por ingresos bienes y/o servicios excluidos.\\n17    Profesionales de compra y venta de divisas\\n18  Precios de transferencia\\n19    Productor de bienes y/o servicios exentos\\n20   Obtención NIT\\n21   Declarar ingreso o salida del país de divisas o moneda l\\n22    Obligado a cumplir deberes formales a nombre de terceros\\n23    Agente de retención en ventas\\n24   Declaración consolidada precios de transferencia\\n26    Declaración individual precios de transferencia\\n32 Impuesto nacional a la gasolina y al ACPM\\n33   Impuesto nacional al consumo\\n36    Establecimiento Permanente\\n37  Obligado a Facturar Electrónicamente\\n38    Facturación Electrónica Voluntaria\\n39  Proveedor de Servicios Tecnológicos PST\\n41 Declaración anual de activos en el exterior\\n45 Autorretenedor de rendimientos financieros\\n46  IVA Prestadores de Servicios desde el Exterior\\n47  Régimen Simple de Tributación - SIMPLE\\n48  Impuesto sobre las ventas - IVA\\n49 No responsable de IVA\\n50   No responsable de Consumo restaurantes y bares\\n51  Agente retención impoconsumo de bienes inmuebles\\n52    Facturador electrónico\\n53  Persona Jurídica No Responsable de IVA"; \r\n' +
+      '"tipoPersona": "Personas Jurídicas, \\nPersonas Naturales no Asalariadas\\nPersonas Naturales Asalariadas"; \r\n' +
+      '"tipoContribuyente": "Atributo para identificar el tipo de contribuyente para el cliente\\nGran contribuyente\\nContribuyente Mediano Alto\\nContribuyente mediano\\nContribuyente pequeño\\nContribuyente Micro\\nEntidades de Derecho Público\\nRégimen Especial o Sin Ánimo de Lucro\\nContribuyente por clasificar\\nAsalariado\\nContribuyente no asalariado"; \r\n' +
+      '"observaciones": "Campo para registrar la información adicional del cliente"; \r\n' +
+      '"correoFacturacionElectronica": "Correo electónico del cliente empleado para facturación electrónica"; \r\n' +
+      '"arriendoMensual": "Valor total del arriendo mensual del cliente"; \r\n' +
+      '"totalEgresos": "valor total de los egresos del cliente"; \r\n' +
+      '"nivelEducativo": "Atributo para registrar el nivel educativo del cliente"; \r\n' +
+      '"nitEmpresa": "nit de la empresa donde labora el cliente"; \r\n' +
+      '"camaraComercio": "Atributo para identificar si el cliente tiene cámara de comercio"; \r\n' +
+      '"profesion": "Profesión del cliente"; \r\n' +
+      '"antiguedad": "Antiguedad en la empresa donde labora el cliente"; \r\n' +
+      '"tipoVivienda": "Tipo de vivienda del cliente"; \r\n' +
+      '"salario": "Valor del salario del cliente"; \r\n' +
+      '"personaExpuesta": "Atributo para identificar si el cliente es una persona expuesta publicamente"; \r\n' +
+      '"actividadEconomica": "Actividad económica del cliente"; \r\n' +
+      '"facturacionElectronica": "Atributo para identificar si el correo electrónico del cliente es requerido, para temas de facturación electrónica o comunicaciones\\nSI / NO"; \r\n' +
+      '"clienteInstitucional": "Atributo para identificar si el cliente es institucional\\nSI / NO"; \r\n' +
+      '"empleado": "Atributo para identificar si el cliente es empleado\\nSI / NO"; \r\n' +
+      '"canal": "Canal del cliente, Segmentación del negocio (mayoristas, minoristas, retail)"; \r\n' +
+      '"segundoNombreEmpresa": "Segunda parte del nombre de la empresa donde labora, cuando aplica"; \r\n' +
+      '"nombreEmpresa": "Nombre de la empresa donde labora"; \r\n' +
+      '"estadoCivil": "Estado civil del cliente"; \r\n' +
+      '"tipoRegimen": "Tipo régimen"; \r\n' +
+      '"totalIngresos": "Valor total de los ingresos del cliente"; \r\n' +
+      '"otrosIngresos": "Valor de otros ingresos del cliente"; \r\n' +
+      '"descripcionOtrosIngresos": "Descripción de los otros ingresos del cliente"; \r\n' +
+      '"contactoFacturacionElectronica": "Nombre de contacto para la facturación eletrónica del cliente"; \r\n' +
+      '"cargo": "Cargo actual del cliente en la empresa donde labora"; \r\n' +
+      '"tipoContrato": "Tipo de contrato que tiene el cliente con la empresa donde labora"; \r\n' +
+      '"estrato": "Atributo para registrar el estrato social del cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: cliente.\r\n' +
+      'Descripcion Entidad: entidad que registra la información del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"fecha_creacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fecha_actualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"compartido": "Atributo para identificar si un cliente esta en más de una unidad de negocio"; \r\n' +
+      '"codigoAplicacion": "Código de la aplicación cuando requiera consultar una entidad de una aplicación especifica"; \r\n' +
+      '"digitoVerificacion": "Valor del digito de verificación del cliente"; \r\n' +
+      '"cliente_id": "atributo que permite identificar el cliente"; \r\n' +
+      '"identificacion": "Documento de identificación del cliente"; \r\n' +
+      '"tipo_identificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC = Cedula de ciudadanía\\nCE = Cedula de extranjería\\nDE = Documento extranjero\\nJU = Jurídico extranjero\\nNI = Nit\\nNU = NUIP\\nOT = Otro\\nPA = Pasaporte\\nPE = Permiso especial permanencia\\nRU = Rut\\nRE = Rut extranjero\\nTI = Tarjeta de identidad"; \r\n' +
+      '"tipo_cliente": "Campo para identificar el campo del tipo de cliente\\nB2B\\nB2C\\nVIP"; \r\n' +
+      '"nombre": "Nombres del cliente"; \r\n' +
+      '"apellido": "Apellidos del cliente"; \r\n' +
+      '"genero": "Atributo para registrar el género del cliente"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"celular": "Numero de celular de contacto"; \r\n' +
+      '"telefono": "Atributo para listar los números de teléfono del cliente"; \r\n' +
+      '"correo_electronico": "Correo electrónico del cliente"; \r\n' +
+      '"horarioAtencion": "Horario de atención en el cual se puede contactar el cliente"; \r\n' +
+      '"unidadNegocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"tratamientoDatos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"tratamiento_datos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"fechaCreacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaActualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaNacimiento": "Atributo para registrar la fecha de nacimiento del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"correoElectronico'... 35985 more characters
+  },
+  {
+    role: 'user',
+    content: 'Si yo modifico la entidad clientes; cuantas entidades se pueden ver impactadas'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: clienteUnidadNegocio.\r\n' +
+      'Descripcion Entidad: Entidad para registrar la información de las unidades de negocio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteUnidadNegocio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Estado del cliente para la unidad de negocio\\nActivo\\nInactivo"; \r\n' +
+      '"grupoNegocioId": "FK grupo_negocio"; \r\n' +
+      '"codigoUnidadNegocio": "Código único que identifica una unidad de negocio de Colombiana de Comercio"; \r\n' +
+      '"clienteUnidadNegocioId": "PK llave primaria"; \r\n' +
+      '"clienteId": "FK cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: clienteDetalle.\r\n' +
+      'Descripcion Entidad: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteDetalle\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"clienteId": "atributo que permite identificar el cliente"; \r\n' +
+      '"dependientes": "Indica la cantidad de personas a cargo o dependientes"; \r\n' +
+      '"fax": "Número de fax del cliente"; \r\n' +
+      '"tipoResponsabilidad": "Tipo de responsabilidad fiscal - facturación electrónica\\n1 Aporte especial para la administración de justicia\\n2   Gravamen a los movimientos financieros\\n3   Impuesto al patrimonio\\n4   Impuesto renta y complementario régimen especial\\n5 Impuesto renta y complementario régimen ordinario\\n6    Ingresos y patrimonio\\n7    Retención en la fuente a título de renta\\n8 Retención timbre nacional\\n9    Retención en la fuente en el impuesto sobre las ventas\\n10  Obligado aduanero\\n13   Gran contribuyente\\n14  Informante de exógena\\n15   Autorretenedor\\n16  Obligación facturar por ingresos bienes y/o servicios excluidos.\\n17    Profesionales de compra y venta de divisas\\n18  Precios de transferencia\\n19    Productor de bienes y/o servicios exentos\\n20   Obtención NIT\\n21   Declarar ingreso o salida del país de divisas o moneda l\\n22    Obligado a cumplir deberes formales a nombre de terceros\\n23    Agente de retención en ventas\\n24   Declaración consolidada precios de transferencia\\n26    Declaración individual precios de transferencia\\n32 Impuesto nacional a la gasolina y al ACPM\\n33   Impuesto nacional al consumo\\n36    Establecimiento Permanente\\n37  Obligado a Facturar Electrónicamente\\n38    Facturación Electrónica Voluntaria\\n39  Proveedor de Servicios Tecnológicos PST\\n41 Declaración anual de activos en el exterior\\n45 Autorretenedor de rendimientos financieros\\n46  IVA Prestadores de Servicios desde el Exterior\\n47  Régimen Simple de Tributación - SIMPLE\\n48  Impuesto sobre las ventas - IVA\\n49 No responsable de IVA\\n50   No responsable de Consumo restaurantes y bares\\n51  Agente retención impoconsumo de bienes inmuebles\\n52    Facturador electrónico\\n53  Persona Jurídica No Responsable de IVA"; \r\n' +
+      '"tipoPersona": "Personas Jurídicas, \\nPersonas Naturales no Asalariadas\\nPersonas Naturales Asalariadas"; \r\n' +
+      '"tipoContribuyente": "Atributo para identificar el tipo de contribuyente para el cliente\\nGran contribuyente\\nContribuyente Mediano Alto\\nContribuyente mediano\\nContribuyente pequeño\\nContribuyente Micro\\nEntidades de Derecho Público\\nRégimen Especial o Sin Ánimo de Lucro\\nContribuyente por clasificar\\nAsalariado\\nContribuyente no asalariado"; \r\n' +
+      '"observaciones": "Campo para registrar la información adicional del cliente"; \r\n' +
+      '"correoFacturacionElectronica": "Correo electónico del cliente empleado para facturación electrónica"; \r\n' +
+      '"arriendoMensual": "Valor total del arriendo mensual del cliente"; \r\n' +
+      '"totalEgresos": "valor total de los egresos del cliente"; \r\n' +
+      '"nivelEducativo": "Atributo para registrar el nivel educativo del cliente"; \r\n' +
+      '"nitEmpresa": "nit de la empresa donde labora el cliente"; \r\n' +
+      '"camaraComercio": "Atributo para identificar si el cliente tiene cámara de comercio"; \r\n' +
+      '"profesion": "Profesión del cliente"; \r\n' +
+      '"antiguedad": "Antiguedad en la empresa donde labora el cliente"; \r\n' +
+      '"tipoVivienda": "Tipo de vivienda del cliente"; \r\n' +
+      '"salario": "Valor del salario del cliente"; \r\n' +
+      '"personaExpuesta": "Atributo para identificar si el cliente es una persona expuesta publicamente"; \r\n' +
+      '"actividadEconomica": "Actividad económica del cliente"; \r\n' +
+      '"facturacionElectronica": "Atributo para identificar si el correo electrónico del cliente es requerido, para temas de facturación electrónica o comunicaciones\\nSI / NO"; \r\n' +
+      '"clienteInstitucional": "Atributo para identificar si el cliente es institucional\\nSI / NO"; \r\n' +
+      '"empleado": "Atributo para identificar si el cliente es empleado\\nSI / NO"; \r\n' +
+      '"canal": "Canal del cliente, Segmentación del negocio (mayoristas, minoristas, retail)"; \r\n' +
+      '"segundoNombreEmpresa": "Segunda parte del nombre de la empresa donde labora, cuando aplica"; \r\n' +
+      '"nombreEmpresa": "Nombre de la empresa donde labora"; \r\n' +
+      '"estadoCivil": "Estado civil del cliente"; \r\n' +
+      '"tipoRegimen": "Tipo régimen"; \r\n' +
+      '"totalIngresos": "Valor total de los ingresos del cliente"; \r\n' +
+      '"otrosIngresos": "Valor de otros ingresos del cliente"; \r\n' +
+      '"descripcionOtrosIngresos": "Descripción de los otros ingresos del cliente"; \r\n' +
+      '"contactoFacturacionElectronica": "Nombre de contacto para la facturación eletrónica del cliente"; \r\n' +
+      '"cargo": "Cargo actual del cliente en la empresa donde labora"; \r\n' +
+      '"tipoContrato": "Tipo de contrato que tiene el cliente con la empresa donde labora"; \r\n' +
+      '"estrato": "Atributo para registrar el estrato social del cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: cliente.\r\n' +
+      'Descripcion Entidad: entidad que registra la información del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"fecha_creacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fecha_actualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"compartido": "Atributo para identificar si un cliente esta en más de una unidad de negocio"; \r\n' +
+      '"codigoAplicacion": "Código de la aplicación cuando requiera consultar una entidad de una aplicación especifica"; \r\n' +
+      '"digitoVerificacion": "Valor del digito de verificación del cliente"; \r\n' +
+      '"cliente_id": "atributo que permite identificar el cliente"; \r\n' +
+      '"identificacion": "Documento de identificación del cliente"; \r\n' +
+      '"tipo_identificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC = Cedula de ciudadanía\\nCE = Cedula de extranjería\\nDE = Documento extranjero\\nJU = Jurídico extranjero\\nNI = Nit\\nNU = NUIP\\nOT = Otro\\nPA = Pasaporte\\nPE = Permiso especial permanencia\\nRU = Rut\\nRE = Rut extranjero\\nTI = Tarjeta de identidad"; \r\n' +
+      '"tipo_cliente": "Campo para identificar el campo del tipo de cliente\\nB2B\\nB2C\\nVIP"; \r\n' +
+      '"nombre": "Nombres del cliente"; \r\n' +
+      '"apellido": "Apellidos del cliente"; \r\n' +
+      '"genero": "Atributo para registrar el género del cliente"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"celular": "Numero de celular de contacto"; \r\n' +
+      '"telefono": "Atributo para listar los números de teléfono del cliente"; \r\n' +
+      '"correo_electronico": "Correo electrónico del cliente"; \r\n' +
+      '"horarioAtencion": "Horario de atención en el cual se puede contactar el cliente"; \r\n' +
+      '"unidadNegocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"tratamientoDatos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"tratamiento_datos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"fechaCreacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaActualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaNacimiento": "Atributo para registrar la fecha de nacimiento del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"correoElectronico'... 35985 more characters
+  },
+  {
+    role: 'user',
+    content: 'Si yo modifico la entidad clientes; cuantas entidades se pueden ver impactadas'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: clienteUnidadNegocio.\r\n' +
+      'Descripcion Entidad: Entidad para registrar la información de las unidades de negocio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteUnidadNegocio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Estado del cliente para la unidad de negocio\\nActivo\\nInactivo"; \r\n' +
+      '"grupoNegocioId": "FK grupo_negocio"; \r\n' +
+      '"codigoUnidadNegocio": "Código único que identifica una unidad de negocio de Colombiana de Comercio"; \r\n' +
+      '"clienteUnidadNegocioId": "PK llave primaria"; \r\n' +
+      '"clienteId": "FK cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: clienteDetalle.\r\n' +
+      'Descripcion Entidad: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteDetalle\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"clienteId": "atributo que permite identificar el cliente"; \r\n' +
+      '"dependientes": "Indica la cantidad de personas a cargo o dependientes"; \r\n' +
+      '"fax": "Número de fax del cliente"; \r\n' +
+      '"tipoResponsabilidad": "Tipo de responsabilidad fiscal - facturación electrónica\\n1 Aporte especial para la administración de justicia\\n2   Gravamen a los movimientos financieros\\n3   Impuesto al patrimonio\\n4   Impuesto renta y complementario régimen especial\\n5 Impuesto renta y complementario régimen ordinario\\n6    Ingresos y patrimonio\\n7    Retención en la fuente a título de renta\\n8 Retención timbre nacional\\n9    Retención en la fuente en el impuesto sobre las ventas\\n10  Obligado aduanero\\n13   Gran contribuyente\\n14  Informante de exógena\\n15   Autorretenedor\\n16  Obligación facturar por ingresos bienes y/o servicios excluidos.\\n17    Profesionales de compra y venta de divisas\\n18  Precios de transferencia\\n19    Productor de bienes y/o servicios exentos\\n20   Obtención NIT\\n21   Declarar ingreso o salida del país de divisas o moneda l\\n22    Obligado a cumplir deberes formales a nombre de terceros\\n23    Agente de retención en ventas\\n24   Declaración consolidada precios de transferencia\\n26    Declaración individual precios de transferencia\\n32 Impuesto nacional a la gasolina y al ACPM\\n33   Impuesto nacional al consumo\\n36    Establecimiento Permanente\\n37  Obligado a Facturar Electrónicamente\\n38    Facturación Electrónica Voluntaria\\n39  Proveedor de Servicios Tecnológicos PST\\n41 Declaración anual de activos en el exterior\\n45 Autorretenedor de rendimientos financieros\\n46  IVA Prestadores de Servicios desde el Exterior\\n47  Régimen Simple de Tributación - SIMPLE\\n48  Impuesto sobre las ventas - IVA\\n49 No responsable de IVA\\n50   No responsable de Consumo restaurantes y bares\\n51  Agente retención impoconsumo de bienes inmuebles\\n52    Facturador electrónico\\n53  Persona Jurídica No Responsable de IVA"; \r\n' +
+      '"tipoPersona": "Personas Jurídicas, \\nPersonas Naturales no Asalariadas\\nPersonas Naturales Asalariadas"; \r\n' +
+      '"tipoContribuyente": "Atributo para identificar el tipo de contribuyente para el cliente\\nGran contribuyente\\nContribuyente Mediano Alto\\nContribuyente mediano\\nContribuyente pequeño\\nContribuyente Micro\\nEntidades de Derecho Público\\nRégimen Especial o Sin Ánimo de Lucro\\nContribuyente por clasificar\\nAsalariado\\nContribuyente no asalariado"; \r\n' +
+      '"observaciones": "Campo para registrar la información adicional del cliente"; \r\n' +
+      '"correoFacturacionElectronica": "Correo electónico del cliente empleado para facturación electrónica"; \r\n' +
+      '"arriendoMensual": "Valor total del arriendo mensual del cliente"; \r\n' +
+      '"totalEgresos": "valor total de los egresos del cliente"; \r\n' +
+      '"nivelEducativo": "Atributo para registrar el nivel educativo del cliente"; \r\n' +
+      '"nitEmpresa": "nit de la empresa donde labora el cliente"; \r\n' +
+      '"camaraComercio": "Atributo para identificar si el cliente tiene cámara de comercio"; \r\n' +
+      '"profesion": "Profesión del cliente"; \r\n' +
+      '"antiguedad": "Antiguedad en la empresa donde labora el cliente"; \r\n' +
+      '"tipoVivienda": "Tipo de vivienda del cliente"; \r\n' +
+      '"salario": "Valor del salario del cliente"; \r\n' +
+      '"personaExpuesta": "Atributo para identificar si el cliente es una persona expuesta publicamente"; \r\n' +
+      '"actividadEconomica": "Actividad económica del cliente"; \r\n' +
+      '"facturacionElectronica": "Atributo para identificar si el correo electrónico del cliente es requerido, para temas de facturación electrónica o comunicaciones\\nSI / NO"; \r\n' +
+      '"clienteInstitucional": "Atributo para identificar si el cliente es institucional\\nSI / NO"; \r\n' +
+      '"empleado": "Atributo para identificar si el cliente es empleado\\nSI / NO"; \r\n' +
+      '"canal": "Canal del cliente, Segmentación del negocio (mayoristas, minoristas, retail)"; \r\n' +
+      '"segundoNombreEmpresa": "Segunda parte del nombre de la empresa donde labora, cuando aplica"; \r\n' +
+      '"nombreEmpresa": "Nombre de la empresa donde labora"; \r\n' +
+      '"estadoCivil": "Estado civil del cliente"; \r\n' +
+      '"tipoRegimen": "Tipo régimen"; \r\n' +
+      '"totalIngresos": "Valor total de los ingresos del cliente"; \r\n' +
+      '"otrosIngresos": "Valor de otros ingresos del cliente"; \r\n' +
+      '"descripcionOtrosIngresos": "Descripción de los otros ingresos del cliente"; \r\n' +
+      '"contactoFacturacionElectronica": "Nombre de contacto para la facturación eletrónica del cliente"; \r\n' +
+      '"cargo": "Cargo actual del cliente en la empresa donde labora"; \r\n' +
+      '"tipoContrato": "Tipo de contrato que tiene el cliente con la empresa donde labora"; \r\n' +
+      '"estrato": "Atributo para registrar el estrato social del cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: cliente.\r\n' +
+      'Descripcion Entidad: entidad que registra la información del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"fecha_creacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fecha_actualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"compartido": "Atributo para identificar si un cliente esta en más de una unidad de negocio"; \r\n' +
+      '"codigoAplicacion": "Código de la aplicación cuando requiera consultar una entidad de una aplicación especifica"; \r\n' +
+      '"digitoVerificacion": "Valor del digito de verificación del cliente"; \r\n' +
+      '"cliente_id": "atributo que permite identificar el cliente"; \r\n' +
+      '"identificacion": "Documento de identificación del cliente"; \r\n' +
+      '"tipo_identificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC = Cedula de ciudadanía\\nCE = Cedula de extranjería\\nDE = Documento extranjero\\nJU = Jurídico extranjero\\nNI = Nit\\nNU = NUIP\\nOT = Otro\\nPA = Pasaporte\\nPE = Permiso especial permanencia\\nRU = Rut\\nRE = Rut extranjero\\nTI = Tarjeta de identidad"; \r\n' +
+      '"tipo_cliente": "Campo para identificar el campo del tipo de cliente\\nB2B\\nB2C\\nVIP"; \r\n' +
+      '"nombre": "Nombres del cliente"; \r\n' +
+      '"apellido": "Apellidos del cliente"; \r\n' +
+      '"genero": "Atributo para registrar el género del cliente"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"celular": "Numero de celular de contacto"; \r\n' +
+      '"telefono": "Atributo para listar los números de teléfono del cliente"; \r\n' +
+      '"correo_electronico": "Correo electrónico del cliente"; \r\n' +
+      '"horarioAtencion": "Horario de atención en el cual se puede contactar el cliente"; \r\n' +
+      '"unidadNegocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"tratamientoDatos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"tratamiento_datos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"fechaCreacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaActualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaNacimiento": "Atributo para registrar la fecha de nacimiento del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"correoElectronico'... 35985 more characters
+  },
+  {
+    role: 'user',
+    content: 'Si yo modifico la entidad clientes; cuantas entidades se pueden ver impactadas'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: clienteUnidadNegocio.\r\n' +
+      'Descripcion Entidad: Entidad para registrar la información de las unidades de negocio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteUnidadNegocio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Estado del cliente para la unidad de negocio\\nActivo\\nInactivo"; \r\n' +
+      '"grupoNegocioId": "FK grupo_negocio"; \r\n' +
+      '"codigoUnidadNegocio": "Código único que identifica una unidad de negocio de Colombiana de Comercio"; \r\n' +
+      '"clienteUnidadNegocioId": "PK llave primaria"; \r\n' +
+      '"clienteId": "FK cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: clienteDetalle.\r\n' +
+      'Descripcion Entidad: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteDetalle\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"clienteId": "atributo que permite identificar el cliente"; \r\n' +
+      '"dependientes": "Indica la cantidad de personas a cargo o dependientes"; \r\n' +
+      '"fax": "Número de fax del cliente"; \r\n' +
+      '"tipoResponsabilidad": "Tipo de responsabilidad fiscal - facturación electrónica\\n1 Aporte especial para la administración de justicia\\n2   Gravamen a los movimientos financieros\\n3   Impuesto al patrimonio\\n4   Impuesto renta y complementario régimen especial\\n5 Impuesto renta y complementario régimen ordinario\\n6    Ingresos y patrimonio\\n7    Retención en la fuente a título de renta\\n8 Retención timbre nacional\\n9    Retención en la fuente en el impuesto sobre las ventas\\n10  Obligado aduanero\\n13   Gran contribuyente\\n14  Informante de exógena\\n15   Autorretenedor\\n16  Obligación facturar por ingresos bienes y/o servicios excluidos.\\n17    Profesionales de compra y venta de divisas\\n18  Precios de transferencia\\n19    Productor de bienes y/o servicios exentos\\n20   Obtención NIT\\n21   Declarar ingreso o salida del país de divisas o moneda l\\n22    Obligado a cumplir deberes formales a nombre de terceros\\n23    Agente de retención en ventas\\n24   Declaración consolidada precios de transferencia\\n26    Declaración individual precios de transferencia\\n32 Impuesto nacional a la gasolina y al ACPM\\n33   Impuesto nacional al consumo\\n36    Establecimiento Permanente\\n37  Obligado a Facturar Electrónicamente\\n38    Facturación Electrónica Voluntaria\\n39  Proveedor de Servicios Tecnológicos PST\\n41 Declaración anual de activos en el exterior\\n45 Autorretenedor de rendimientos financieros\\n46  IVA Prestadores de Servicios desde el Exterior\\n47  Régimen Simple de Tributación - SIMPLE\\n48  Impuesto sobre las ventas - IVA\\n49 No responsable de IVA\\n50   No responsable de Consumo restaurantes y bares\\n51  Agente retención impoconsumo de bienes inmuebles\\n52    Facturador electrónico\\n53  Persona Jurídica No Responsable de IVA"; \r\n' +
+      '"tipoPersona": "Personas Jurídicas, \\nPersonas Naturales no Asalariadas\\nPersonas Naturales Asalariadas"; \r\n' +
+      '"tipoContribuyente": "Atributo para identificar el tipo de contribuyente para el cliente\\nGran contribuyente\\nContribuyente Mediano Alto\\nContribuyente mediano\\nContribuyente pequeño\\nContribuyente Micro\\nEntidades de Derecho Público\\nRégimen Especial o Sin Ánimo de Lucro\\nContribuyente por clasificar\\nAsalariado\\nContribuyente no asalariado"; \r\n' +
+      '"observaciones": "Campo para registrar la información adicional del cliente"; \r\n' +
+      '"correoFacturacionElectronica": "Correo electónico del cliente empleado para facturación electrónica"; \r\n' +
+      '"arriendoMensual": "Valor total del arriendo mensual del cliente"; \r\n' +
+      '"totalEgresos": "valor total de los egresos del cliente"; \r\n' +
+      '"nivelEducativo": "Atributo para registrar el nivel educativo del cliente"; \r\n' +
+      '"nitEmpresa": "nit de la empresa donde labora el cliente"; \r\n' +
+      '"camaraComercio": "Atributo para identificar si el cliente tiene cámara de comercio"; \r\n' +
+      '"profesion": "Profesión del cliente"; \r\n' +
+      '"antiguedad": "Antiguedad en la empresa donde labora el cliente"; \r\n' +
+      '"tipoVivienda": "Tipo de vivienda del cliente"; \r\n' +
+      '"salario": "Valor del salario del cliente"; \r\n' +
+      '"personaExpuesta": "Atributo para identificar si el cliente es una persona expuesta publicamente"; \r\n' +
+      '"actividadEconomica": "Actividad económica del cliente"; \r\n' +
+      '"facturacionElectronica": "Atributo para identificar si el correo electrónico del cliente es requerido, para temas de facturación electrónica o comunicaciones\\nSI / NO"; \r\n' +
+      '"clienteInstitucional": "Atributo para identificar si el cliente es institucional\\nSI / NO"; \r\n' +
+      '"empleado": "Atributo para identificar si el cliente es empleado\\nSI / NO"; \r\n' +
+      '"canal": "Canal del cliente, Segmentación del negocio (mayoristas, minoristas, retail)"; \r\n' +
+      '"segundoNombreEmpresa": "Segunda parte del nombre de la empresa donde labora, cuando aplica"; \r\n' +
+      '"nombreEmpresa": "Nombre de la empresa donde labora"; \r\n' +
+      '"estadoCivil": "Estado civil del cliente"; \r\n' +
+      '"tipoRegimen": "Tipo régimen"; \r\n' +
+      '"totalIngresos": "Valor total de los ingresos del cliente"; \r\n' +
+      '"otrosIngresos": "Valor de otros ingresos del cliente"; \r\n' +
+      '"descripcionOtrosIngresos": "Descripción de los otros ingresos del cliente"; \r\n' +
+      '"contactoFacturacionElectronica": "Nombre de contacto para la facturación eletrónica del cliente"; \r\n' +
+      '"cargo": "Cargo actual del cliente en la empresa donde labora"; \r\n' +
+      '"tipoContrato": "Tipo de contrato que tiene el cliente con la empresa donde labora"; \r\n' +
+      '"estrato": "Atributo para registrar el estrato social del cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: cliente.\r\n' +
+      'Descripcion Entidad: entidad que registra la información del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"fecha_creacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fecha_actualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"compartido": "Atributo para identificar si un cliente esta en más de una unidad de negocio"; \r\n' +
+      '"codigoAplicacion": "Código de la aplicación cuando requiera consultar una entidad de una aplicación especifica"; \r\n' +
+      '"digitoVerificacion": "Valor del digito de verificación del cliente"; \r\n' +
+      '"cliente_id": "atributo que permite identificar el cliente"; \r\n' +
+      '"identificacion": "Documento de identificación del cliente"; \r\n' +
+      '"tipo_identificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC = Cedula de ciudadanía\\nCE = Cedula de extranjería\\nDE = Documento extranjero\\nJU = Jurídico extranjero\\nNI = Nit\\nNU = NUIP\\nOT = Otro\\nPA = Pasaporte\\nPE = Permiso especial permanencia\\nRU = Rut\\nRE = Rut extranjero\\nTI = Tarjeta de identidad"; \r\n' +
+      '"tipo_cliente": "Campo para identificar el campo del tipo de cliente\\nB2B\\nB2C\\nVIP"; \r\n' +
+      '"nombre": "Nombres del cliente"; \r\n' +
+      '"apellido": "Apellidos del cliente"; \r\n' +
+      '"genero": "Atributo para registrar el género del cliente"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"celular": "Numero de celular de contacto"; \r\n' +
+      '"telefono": "Atributo para listar los números de teléfono del cliente"; \r\n' +
+      '"correo_electronico": "Correo electrónico del cliente"; \r\n' +
+      '"horarioAtencion": "Horario de atención en el cual se puede contactar el cliente"; \r\n' +
+      '"unidadNegocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"tratamientoDatos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"tratamiento_datos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"fechaCreacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaActualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaNacimiento": "Atributo para registrar la fecha de nacimiento del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"correoElectronico'... 35985 more characters
+  },
+  {
+    role: 'user',
+    content: 'Si yo modifico la entidad clientes; cuantas entidades se pueden ver impactadas'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: clienteUnidadNegocio.\r\n' +
+      'Descripcion Entidad: Entidad para registrar la información de las unidades de negocio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteUnidadNegocio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Estado del cliente para la unidad de negocio\\nActivo\\nInactivo"; \r\n' +
+      '"grupoNegocioId": "FK grupo_negocio"; \r\n' +
+      '"codigoUnidadNegocio": "Código único que identifica una unidad de negocio de Colombiana de Comercio"; \r\n' +
+      '"clienteUnidadNegocioId": "PK llave primaria"; \r\n' +
+      '"clienteId": "FK cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: cliente.\r\n' +
+      'Descripcion Entidad: entidad que registra la información del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"fecha_creacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fecha_actualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"compartido": "Atributo para identificar si un cliente esta en más de una unidad de negocio"; \r\n' +
+      '"codigoAplicacion": "Código de la aplicación cuando requiera consultar una entidad de una aplicación especifica"; \r\n' +
+      '"digitoVerificacion": "Valor del digito de verificación del cliente"; \r\n' +
+      '"cliente_id": "atributo que permite identificar el cliente"; \r\n' +
+      '"identificacion": "Documento de identificación del cliente"; \r\n' +
+      '"tipo_identificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC = Cedula de ciudadanía\\nCE = Cedula de extranjería\\nDE = Documento extranjero\\nJU = Jurídico extranjero\\nNI = Nit\\nNU = NUIP\\nOT = Otro\\nPA = Pasaporte\\nPE = Permiso especial permanencia\\nRU = Rut\\nRE = Rut extranjero\\nTI = Tarjeta de identidad"; \r\n' +
+      '"tipo_cliente": "Campo para identificar el campo del tipo de cliente\\nB2B\\nB2C\\nVIP"; \r\n' +
+      '"nombre": "Nombres del cliente"; \r\n' +
+      '"apellido": "Apellidos del cliente"; \r\n' +
+      '"genero": "Atributo para registrar el género del cliente"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"celular": "Numero de celular de contacto"; \r\n' +
+      '"telefono": "Atributo para listar los números de teléfono del cliente"; \r\n' +
+      '"correo_electronico": "Correo electrónico del cliente"; \r\n' +
+      '"horarioAtencion": "Horario de atención en el cual se puede contactar el cliente"; \r\n' +
+      '"unidadNegocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"tratamientoDatos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"tratamiento_datos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"fechaCreacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaActualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaNacimiento": "Atributo para registrar la fecha de nacimiento del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"correoElectronico": "Correo electrónico del cliente"; \r\n' +
+      '"telefono": "Atributo para listar los números de teléfono del cliente"; \r\n' +
+      '"celular": "Numero de celular de contacto"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"genero": "Atributo para registrar el género del cliente"; \r\n' +
+      '"apellido": "Apellidos del cliente"; \r\n' +
+      '"nombre": "Nombres del cliente"; \r\n' +
+      '"tipoCliente": "Campo para identificar el campo del tipo de cliente\\nB2B\\nB2C\\nVIP"; \r\n' +
+      '"tipoIdentificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC = Cedula de ciudadanía\\nCE = Cedula de extranjería\\nDE = Documento extranjero\\nJU = Jurídico extranjero\\nNI = Nit\\nNU = NUIP\\nOT = Otro\\nPA = Pasaporte\\nPE = Permiso especial permanencia\\nRU = Rut\\nRE = Rut extranjero\\nTI = Tarjeta de identidad"; \r\n' +
+      '"identificacion": "Documento de identificación del cliente"; \r\n' +
+      '"clienteId": "atributo que permite identificar el cliente"; \r\n' +
+      '"fecha_nacimiento": "Atributo para registrar la fecha de nacimiento del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"observaciones": "Campo para registrar la información adicional del cliente"; \r\n' +
+      '"estrato": "Atributo para registrar el estrato social del cliente"; \r\n' +
+      '"bloqueo_cliente": "Identifica si el cliente esta bloquedado"; \r\n' +
+      '"cliente_institucional": "Atributo para identificar si el cliente es institucional"; \r\n' +
+      '"empleado": "Atributo para identificar si el cliente es empleado"; \r\n' +
+      '"canal": "Canal del cliente, Segmentación del negocio (mayoristas, minoristas, retail)"; \r\n' +
+      '"estado_civil": "Estado civil del cliente"; \r\n' +
+      '"segundo_apellido": "Aplica cuando el cliente tiene dos apellidos o estan distribuidos los apellidos en los dos atributos"; \r\n' +
+      '"segundo_nombre": "Aplica cuando el cliente tiene los nombres en dos atributos o dos nombres"; \r\n' +
+      '"tipo_persona": "Personas Jurídicas, Personas Naturales no Asalariadas y Personas\\nNaturales Asalariadas"; \r\n' +
+      '"codigo_negocio_principal": "Código del negocio principal \\nEje: DISTR"; \r\n' +
+      '"codigo_unidad_negocio": "Código de la unidad de negocio"; \r\n' +
+      '"horario_atencion": "Horario de atención en el cual se puede contactar el cliente"; \r\n' +
+      '"unidad_negocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"observaciones": "Campo para registrar la información adicional del cliente"; \r\n' +
+      '"estrato": "Atributo para registrar el estrato social del cliente"; \r\n' +
+      '"bloqueoCliente": "Identifica si el cliente esta bloquedado"; \r\n' +
+      '"clienteInstitucional": "Atributo para identificar si el cliente es institucional"; \r\n' +
+      '"empleado": "Atributo para identificar si el cliente es empleado"; \r\n' +
+      '"canal": "Canal del cliente, Segmentación del negocio (mayoristas, minoristas, retail)"; \r\n' +
+      '"estadoCivil": "Estado civil del cliente"; \r\n' +
+      '"segundoApellido": "Aplica cuando el cliente tiene dos apellidos o estan distribuidos los apellidos en los dos atributos"; \r\n' +
+      '"segundoNombre": "Aplica cuando el cliente tiene los nombres en dos atributos o dos nombres"; \r\n' +
+      '"tipoPersona": "Personas Jurídicas, Personas Naturales no Asalariadas y Personas\\nNaturales Asalariadas"; \r\n' +
+      '"codigoNegocioPrincipal": "Código del negocio principal \\nEje: DISTR"; \r\n' +
+      '"codigoUnidadNegocio": "Código de la unidad de negocio"; \r\n' +
+      '"departamento": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fecha_creacion": "Atributo para registrar la fecha de nacimiento del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fecha_actualizacion": "Correo electrónico del cliente"; \r\n' +
+      '"fecha_nacimiento": "Atributo para listar los números de teléfono del cliente"; \r\n' +
+      '"correo_electronico": "Numero de celular de contacto"; \r\n' +
+      '"celular": "Dirección del cliente"; \r\n' +
+      '"direccion": "Atributo para registrar el género del cliente"; \r\n' +
+      '"ciudad": "Apellidos del cliente"; \r\n' +
+      '"apellido": "Nombres del cliente"; \r\n' +
+      '"nombre": "Campo para identificar el campo del tipo de cliente\\nB2B\\nB2C\\nVIP"; \r\n' +
+      '"tipo_identificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC = Cedula de ciudadanía\\nCE = Cedula de extranjería\\nDE = Documento extranjero\\nJU = Jurídico extranjero\\nNI = Nit\\nNU = NUIP\\nOT = Otro\\nPA = Pasaporte\\nPE = Permiso especial permanencia\\nRU = Rut\\nRE = Rut extranjero\\nTI = Tarjeta de identidad"; \r\n' +
+      '"identificacion": "Documento de identificación del cliente"; \r\n' +
+      '"cliente_id": "atributo que permite identificar el cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: clienteDetalle.\r\n' +
+      'Descripcion Entidad: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteDetalle\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"clienteId": "atributo que permite identificar el cliente"; \r\n' +
+      '"dependientes": "Indica la cantidad de personas a'... 35144 more characters
+  },
+  {
+    role: 'user',
+    content: 'presentar en un json las entidades relacionadas con cliente'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: factura.\r\n' +
+      'Descripcion Entidad: Modelo canónico para el registro de la información de las facturas..\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.factura\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"precioTotalExonerado": "Es la suma de todos los valores exonerados de cada producto"; \r\n' +
+      '"departamento": "Departamento de la dirección del cliente"; \r\n' +
+      '"clienteId": "fk cliente"; \r\n' +
+      '"confirmarCompra": "Significa que la compra debe ser confirmada\\n(Solo se envía en TRUE antes de enviar a facturar IN34 y solo se debe enviar una vez en TRUE por pedido)"; \r\n' +
+      '"grupoNegocio": "FK grupoNegocio"; \r\n' +
+      '"pagoTotal": "Valor total pagado de la factura"; \r\n' +
+      '"baseImpuestos": "Valor base para el calculo de impuestos"; \r\n' +
+      '"totalImpuestos": "Valor total de los impuestos"; \r\n' +
+      '"nombresCliente": "Atributo relacionado con los nombres y apellidos del cliente , en caso de NIT corresponde a la razón social"; \r\n' +
+      '"identificacion": "Documento de identiicacion del cliente"; \r\n' +
+      '"nitEmisor": "Número de identificación tributaria del emisor de la factura"; \r\n' +
+      '"nombreEmisor": "Nombre del emisor de la factura"; \r\n' +
+      '"fechaCreacion": "Fecha y hora de creación o de expedición del evento \\n Formato de la Fecha 24 horas YYYY-MM-DD HH:mm:ss"; \r\n' +
+      '"cufe": "Código Único de Facturación Electrónica"; \r\n' +
+      '"telefono": "telefono del cliente"; \r\n' +
+      '"direccion": "Direccion del cliente"; \r\n' +
+      '"barrio": "barrio de la dirección del cliente"; \r\n' +
+      '"ciudad": "Ciudad de la dirección del cliente del cliente"; \r\n' +
+      '"cude": "Código Único de Documento Electrónico (CUDE)"; \r\n' +
+      '"numeroFactura": "Número del documento o factura referenciada"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: ordenServicio.\r\n' +
+      'Descripcion Entidad: Entidad que registra la información relacionada a las ordenes de servicio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ordenServicio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"usuarioCreacionCaso": "Usuario que registra el caso\\nNombres completos"; \r\n' +
+      '"estadoCaso": "Estado asociado al caso"; \r\n' +
+      '"subEstado": "Sub estado del caso"; \r\n' +
+      '"fechaActualizacion": "Fecha en que se realiza la ultima actualización del caso \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"usuarioActualizacionCaso": "Usuario que realiza la ultima actualización del caso\\nNombres Completos"; \r\n' +
+      '"accesorios": "Listado de accesorios o empaques de los productos asociados al caso"; \r\n' +
+      '"identificacionClienteFactura": "Numero de identificación del cliente que factura"; \r\n' +
+      '"nombresClienteFactura": "Nombres completos del cliente que realiza la factura"; \r\n' +
+      '"identificacionClienteCaso": "Número de identificación del cliente que entrega el producto asociado al caso"; \r\n' +
+      '"nombresClienteCaso": "Nombres completos del cliente que entrega el producto asociado al caso"; \r\n' +
+      '"descripcion": "Descripcion detallada del la orden de servicio o la falla"; \r\n' +
+      '"valorProducto": "Valor del prodcucto asociado al caso"; \r\n' +
+      '"fechaCierre": "Fecha en la que se realiza el cierre del caso \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"codigoUnidadNegocio": "Unidad de negocio asociado al cliente que solicita la instalación"; \r\n' +
+      '"tipoIdentificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC=Cedula de ciudadanía\\nNI=Nit\\nJU=Jurídico extranjero\\nRU=Rut\\nTI=Tarjeta de identidad\\nRC=Registro civil\\nCE=Cedula de extranjería\\nPA=Pasaporte"; \r\n' +
+      '"telefono": "Numero telefónico del cliente"; \r\n' +
+      '"celular": "Numero de celular del cliente"; \r\n' +
+      '"tipoTransaccion": "Clasificación de la transacción, ejemplo "Venta" o "Devolución""; \r\n' +
+      '"cantidad": "Cantidad facturada"; \r\n' +
+      '"numeroFacturaOriginal": "Numero factura original"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"territorio": "Identificador alfanumérico que representa un territorio en una ubicación - ciudad"; \r\n' +
+      '"clienteId": "fk cliente"; \r\n' +
+      '"productoId": "fk producto"; \r\n' +
+      '"numeroCaso": "Codigo del caso de la orden de servicio"; \r\n' +
+      '"marca": "Marca del producto asociado al caso"; \r\n' +
+      '"numeroFactura": "Numero de factura asociada al caso"; \r\n' +
+      '"codigoEan": "Código EAN del articulo asociado al caso"; \r\n' +
+      '"descripcionProducto": "Descripción del producto"; \r\n' +
+      '"serialProducto": "Serial del producto"; \r\n' +
+      '"imei": "Código Imei para los poductos que aplican"; \r\n' +
+      '"almacenFactura": "Almacen que factura el producto"; \r\n' +
+      '"almacenRecibo": "Almacen que recibe el caso"; \r\n' +
+      '"fechaFactura": "Fecha en que se genera la factura asociada al caso \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaCreacionOrden": "Fecha y hora en que se creo la orden \\n Formato de la Fecha 24 horas YYYY-MM-DD HH:mm:ss"; \r\n' +
+      '"observaciones": "Observaciones de la orden de servicio o el caso"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: clienteUnidadNegocio.\r\n' +
+      'Descripcion Entidad: Entidad para registrar la información de las unidades de negocio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteUnidadNegocio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Estado del cliente para la unidad de negocio\\nActivo\\nInactivo"; \r\n' +
+      '"grupoNegocioId": "FK grupo_negocio"; \r\n' +
+      '"codigoUnidadNegocio": "Código único que identifica una unidad de negocio de Colombiana de Comercio"; \r\n' +
+      '"clienteUnidadNegocioId": "PK llave primaria"; \r\n' +
+      '"clienteId": "FK cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: cliente.\r\n' +
+      'Descripcion Entidad: entidad que registra la información del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"estado": "Atributo para definir el estado del cliente\\nActivo\\nInactivo"; \r\n' +
+      '"fecha_creacion": "Fecha en la que se creó el registro del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fecha_actualizacion": "Ultima fecha en que se actualizo los datos del cliente \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"compartido": "Atributo para identificar si un cliente esta en más de una unidad de negocio"; \r\n' +
+      '"codigoAplicacion": "Código de la aplicación cuando requiera consultar una entidad de una aplicación especifica"; \r\n' +
+      '"digitoVerificacion": "Valor del digito de verificación del cliente"; \r\n' +
+      '"cliente_id": "atributo que permite identificar el cliente"; \r\n' +
+      '"identificacion": "Documento de identificación del cliente"; \r\n' +
+      '"tipo_identificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC = Cedula de ciudadanía\\nCE = Cedula de extranjería\\nDE = Documento extranjero\\nJU = Jurídico extranjero\\nNI = Nit\\nNU = NUIP\\nOT = Otro\\nPA = Pasaporte\\nPE = Permiso especial permanencia\\nRU = Rut\\nRE = Rut extranjero\\nTI = Tarjeta de identidad"; \r\n' +
+      '"tipo_cliente": "Campo para identificar el campo del tipo de cliente\\nB2B\\nB2C\\nVIP"; \r\n' +
+      '"nombre": "Nombres del cliente"; \r\n' +
+      '"apellido": "Apellidos del cliente"; \r\n' +
+      '"genero": "Atributo para registrar el género del cliente"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"celular": "Numero de celular de contacto"; \r\n' +
+      '"telefono": "Atributo para listar los números de teléfono del cliente"; \r\n' +
+      '"correo_electronico": "Correo electrónico del cliente"; \r\n' +
+      '"horarioAtencion": "Horario de atención en el cual se puede contactar el cliente"; \r\n' +
+      '"unidadNegocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"tratamientoDatos": "Atributo para validar el tratamiento de datos personales"; \r\n' +
+      '"tratamiento_datos": "Atributo para valid'... 31896 more characters
+  },
+  {
+    role: 'user',
+    content: 'actualmente hay un servicio que actualiza en los e-commerce el estado de la Orden, el caso es que se actualiza en los e-commerce el estado "Facturado" y tengo duda si debo dejarlo sobre la API Despachos o Pedidos?'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: factura.\r\n' +
+      'Descripcion Entidad: Modelo canónico para el registro de la información de las facturas..\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.factura\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"precioTotalExonerado": "Es la suma de todos los valores exonerados de cada producto"; \r\n' +
+      '"departamento": "Departamento de la dirección del cliente"; \r\n' +
+      '"clienteId": "fk cliente"; \r\n' +
+      '"confirmarCompra": "Significa que la compra debe ser confirmada\\n(Solo se envía en TRUE antes de enviar a facturar IN34 y solo se debe enviar una vez en TRUE por pedido)"; \r\n' +
+      '"grupoNegocio": "FK grupoNegocio"; \r\n' +
+      '"pagoTotal": "Valor total pagado de la factura"; \r\n' +
+      '"baseImpuestos": "Valor base para el calculo de impuestos"; \r\n' +
+      '"totalImpuestos": "Valor total de los impuestos"; \r\n' +
+      '"nombresCliente": "Atributo relacionado con los nombres y apellidos del cliente , en caso de NIT corresponde a la razón social"; \r\n' +
+      '"identificacion": "Documento de identiicacion del cliente"; \r\n' +
+      '"nitEmisor": "Número de identificación tributaria del emisor de la factura"; \r\n' +
+      '"nombreEmisor": "Nombre del emisor de la factura"; \r\n' +
+      '"fechaCreacion": "Fecha y hora de creación o de expedición del evento \\n Formato de la Fecha 24 horas YYYY-MM-DD HH:mm:ss"; \r\n' +
+      '"cufe": "Código Único de Facturación Electrónica"; \r\n' +
+      '"telefono": "telefono del cliente"; \r\n' +
+      '"direccion": "Direccion del cliente"; \r\n' +
+      '"barrio": "barrio de la dirección del cliente"; \r\n' +
+      '"ciudad": "Ciudad de la dirección del cliente del cliente"; \r\n' +
+      '"cude": "Código Único de Documento Electrónico (CUDE)"; \r\n' +
+      '"numeroFactura": "Número del documento o factura referenciada"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: ordenServicio.\r\n' +
+      'Descripcion Entidad: Entidad que registra la información relacionada a las ordenes de servicio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ordenServicio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"usuarioCreacionCaso": "Usuario que registra el caso\\nNombres completos"; \r\n' +
+      '"estadoCaso": "Estado asociado al caso"; \r\n' +
+      '"subEstado": "Sub estado del caso"; \r\n' +
+      '"fechaActualizacion": "Fecha en que se realiza la ultima actualización del caso \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"usuarioActualizacionCaso": "Usuario que realiza la ultima actualización del caso\\nNombres Completos"; \r\n' +
+      '"accesorios": "Listado de accesorios o empaques de los productos asociados al caso"; \r\n' +
+      '"identificacionClienteFactura": "Numero de identificación del cliente que factura"; \r\n' +
+      '"nombresClienteFactura": "Nombres completos del cliente que realiza la factura"; \r\n' +
+      '"identificacionClienteCaso": "Número de identificación del cliente que entrega el producto asociado al caso"; \r\n' +
+      '"nombresClienteCaso": "Nombres completos del cliente que entrega el producto asociado al caso"; \r\n' +
+      '"descripcion": "Descripcion detallada del la orden de servicio o la falla"; \r\n' +
+      '"valorProducto": "Valor del prodcucto asociado al caso"; \r\n' +
+      '"fechaCierre": "Fecha en la que se realiza el cierre del caso \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"codigoUnidadNegocio": "Unidad de negocio asociado al cliente que solicita la instalación"; \r\n' +
+      '"tipoIdentificacion": "Código del tipo de identificación del cliente a consultar. \\nValores permitidos:\\nCC=Cedula de ciudadanía\\nNI=Nit\\nJU=Jurídico extranjero\\nRU=Rut\\nTI=Tarjeta de identidad\\nRC=Registro civil\\nCE=Cedula de extranjería\\nPA=Pasaporte"; \r\n' +
+      '"telefono": "Numero telefónico del cliente"; \r\n' +
+      '"celular": "Numero de celular del cliente"; \r\n' +
+      '"tipoTransaccion": "Clasificación de la transacción, ejemplo "Venta" o "Devolución""; \r\n' +
+      '"cantidad": "Cantidad facturada"; \r\n' +
+      '"numeroFacturaOriginal": "Numero factura original"; \r\n' +
+      '"direccion": "Dirección del cliente"; \r\n' +
+      '"territorio": "Identificador alfanumérico que representa un territorio en una ubicación - ciudad"; \r\n' +
+      '"clienteId": "fk cliente"; \r\n' +
+      '"productoId": "fk producto"; \r\n' +
+      '"numeroCaso": "Codigo del caso de la orden de servicio"; \r\n' +
+      '"marca": "Marca del producto asociado al caso"; \r\n' +
+      '"numeroFactura": "Numero de factura asociada al caso"; \r\n' +
+      '"codigoEan": "Código EAN del articulo asociado al caso"; \r\n' +
+      '"descripcionProducto": "Descripción del producto"; \r\n' +
+      '"serialProducto": "Serial del producto"; \r\n' +
+      '"imei": "Código Imei para los poductos que aplican"; \r\n' +
+      '"almacenFactura": "Almacen que factura el producto"; \r\n' +
+      '"almacenRecibo": "Almacen que recibe el caso"; \r\n' +
+      '"fechaFactura": "Fecha en que se genera la factura asociada al caso \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"fechaCreacionOrden": "Fecha y hora en que se creo la orden \\n Formato de la Fecha 24 horas YYYY-MM-DD HH:mm:ss"; \r\n' +
+      '"observaciones": "Observaciones de la orden de servicio o el caso"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: transporte.\r\n' +
+      'Descripcion Entidad: Entidad que registra la información del transporte.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.transporte\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"vehiculoSecundarioId": "FK vehiculo"; \r\n' +
+      '"vehiculoId": "FK vehiculo"; \r\n' +
+      '"proveedorId": "FK proveedor"; \r\n' +
+      '"tipoTransporte": "orresponde al tipo de transporte, y tiene las siguientes equivalencias:\\n1- Propio\\n2-Fidelizado\\n3-Paquetera\\n4-Empresa\\n5- No determinado"; \r\n' +
+      '"transporteId": "Llave primaria identificador del registro en la entidad"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: clienteUnidadNegocio.\r\n' +
+      'Descripcion Entidad: Entidad para registrar la información de las unidades de negocio.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.clienteUnidadNegocio\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Estado del cliente para la unidad de negocio\\nActivo\\nInactivo"; \r\n' +
+      '"grupoNegocioId": "FK grupo_negocio"; \r\n' +
+      '"codigoUnidadNegocio": "Código único que identifica una unidad de negocio de Colombiana de Comercio"; \r\n' +
+      '"clienteUnidadNegocioId": "PK llave primaria"; \r\n' +
+      '"clienteId": "FK cliente"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: reglasValidador.\r\n' +
+      'Descripcion Entidad: Entidad que registra las reglas del validador para Marketing y para Cartera.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.reglasValidador\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"reglasValidadorId": "PK Lave primaria"; \r\n' +
+      '"proceso": "Atributo para identificar cual proceso quiere validar el cliente \\nCartera/Marketing\\n1 = Cartera\\n2 = Marketing"; \r\n' +
+      '"estado": "Estado de aplicabilidad de la regla\\n1 = Activa\\n0= Inactiva"; \r\n' +
+      '"nombre": "Nombre de la regla"; \r\n' +
+      '"codigo": "Codigo asignado a la regla"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: cliente.\r\n' +
+      'Descripcion Entidad: entidad que registra la información del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atribu'... 30050 more characters
+  },
+  {
+    role: 'user',
+    content: 'actualmente hay un servicio rest que actualiza en los e-commerce el estado de la Orden, el caso es que se actualiza en los e-commerce el estado "Facturado" y tengo duda si debo dejarlo sobre la API Despachos o Pedidos?'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: factura.\r\n' +
+      'Descripcion Entidad: Modelo canónico para el registro de la información de las facturas..\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.factura\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"precioTotalExonerado": "Es la suma de todos los valores exonerados de cada producto"; \r\n' +
+      '"departamento": "Departamento de la dirección del cliente"; \r\n' +
+      '"clienteId": "fk cliente"; \r\n' +
+      '"confirmarCompra": "Significa que la compra debe ser confirmada\\n(Solo se envía en TRUE antes de enviar a facturar IN34 y solo se debe enviar una vez en TRUE por pedido)"; \r\n' +
+      '"grupoNegocio": "FK grupoNegocio"; \r\n' +
+      '"pagoTotal": "Valor total pagado de la factura"; \r\n' +
+      '"baseImpuestos": "Valor base para el calculo de impuestos"; \r\n' +
+      '"totalImpuestos": "Valor total de los impuestos"; \r\n' +
+      '"nombresCliente": "Atributo relacionado con los nombres y apellidos del cliente , en caso de NIT corresponde a la razón social"; \r\n' +
+      '"identificacion": "Documento de identiicacion del cliente"; \r\n' +
+      '"nitEmisor": "Número de identificación tributaria del emisor de la factura"; \r\n' +
+      '"nombreEmisor": "Nombre del emisor de la factura"; \r\n' +
+      '"fechaCreacion": "Fecha y hora de creación o de expedición del evento \\n Formato de la Fecha 24 horas YYYY-MM-DD HH:mm:ss"; \r\n' +
+      '"cufe": "Código Único de Facturación Electrónica"; \r\n' +
+      '"telefono": "telefono del cliente"; \r\n' +
+      '"direccion": "Direccion del cliente"; \r\n' +
+      '"barrio": "barrio de la dirección del cliente"; \r\n' +
+      '"ciudad": "Ciudad de la dirección del cliente del cliente"; \r\n' +
+      '"cude": "Código Único de Documento Electrónico (CUDE)"; \r\n' +
+      '"numeroFactura": "Número del documento o factura referenciada"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: productoCredito.\r\n' +
+      'Descripcion Entidad: Entidad que permite la consulta de los productos de crédito.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.productoCredito\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"descripcionProducto": "Descripción del producto"; \r\n' +
+      '"identificacion": "Identificación del cliente"; \r\n' +
+      '"subscripcion": "Numero del convenio o contrato que tiene Colombiana de Comercio con Tuya"; \r\n' +
+      '"clienteId": "fk cliente"; \r\n' +
+      '"valor": "Valor de la cuota del producto"; \r\n' +
+      '"codigoProducto": "Codigo del Producto que tiene el cliente contratado con Tuya"; \r\n' +
+      '"productoCreditoId": "Identificador del registro"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: flete.\r\n' +
+      'Descripcion Entidad: Corresponde al costo que se paga por el transporte de mercancías de un lugar a otro.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.flete\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"autorizacionSalida": "Indica si se le puede añadir mercancia al vehiculo\\nY=Sí\\nN=No"; \r\n' +
+      '"identificacionInstanciaCola": "Instancia de cola"; \r\n' +
+      '"numeroRecibo": "Número de recibo para el pago"; \r\n' +
+      '"numeroFactura": "Número de la factura del transportador"; \r\n' +
+      '"identificacionUsuario": "Identificación del usuario que realiza la liquidación"; \r\n' +
+      '"valor": "Valor de importe bruto de la factura"; \r\n' +
+      '"procesoLiquidacion": "Identificación de ejecucioón del proceso de liquidación"; \r\n' +
+      '"fechaContable": "Fecha contable\\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"envioId": "Identificador del envio para la liquidación de fletes"; \r\n' +
+      '"cargaId": "Identificador único de la carga, agrupador de pedidos"; \r\n' +
+      '"codigoMedioPago": "Codigo del medio o método de pago"; \r\n' +
+      '"codigoUnidadNegocio": "Código de la unidad de negocio"; \r\n' +
+      '"identificacionTransportador": "Identificación del transportador del envio"; \r\n' +
+      '"facturacionElectronica": "Atributo para identificar si el transportador cuenta con factura electrónica\\nY=Sí\\nN=No"; \r\n' +
+      '"despachoId": "FK despacho"; \r\n' +
+      '"nombreCentroDistribucion": "Nombre del centro de distribución"; \r\n' +
+      '"placaVehiculo": "Placa de indentificación del vehiculo que realiza el transporte"; \r\n' +
+      '"consecutivoBolsa": "Consecutivo de la bolsa (Agrupamiento de carga y pedidos)"; \r\n' +
+      '"codigoCiudad": "Corresponde al nombre de la ciudad de la dirección de envio del cliente"; \r\n' +
+      '"codigoBarrio": "Código de la dirección del barrio del cliente"; \r\n' +
+      '"codigoRuta": "Código de la ruta"; \r\n' +
+      '"origenDemanda": "Origen de la demanda"; \r\n' +
+      '"codigoUnidadNegocioDestino": "Código de la unidad de negocio destino"; \r\n' +
+      '"bolsaLiquidada": "Indica si la bolsa fue liquidada \\nY= Sí\\nN=No"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: categoriaProducto.\r\n' +
+      'Descripcion Entidad: Entidad que consolida el arbol de categoría de los productos.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.categoriaProducto\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"descripcion": "Descripcion de la categoría del producto"; \r\n' +
+      '"tipoCategoria": "tipo de categoria a la cual esta asociado la categoría del producto\\nGrupo\\nDivisión\\nLinea\\nsublinea\\nCategoría\\nSub Categoría\\nFamilia"; \r\n' +
+      '"categoriaPadre": "Nombre de la categoria padre para poder construir el arbol de categorias"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: despacho.\r\n' +
+      'Descripcion Entidad: Entidad que registra la información que se envia al WMS para el proceso de despacho o envio\\nIncluye (Cliente, pedido, producto, transporte, ubicaciones, etc)\\nDesencadenar las tareas de Separación, Ruteo, Picking, Packing, Shipping y Tracking.​.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.despacho\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"barrio": "Barrio asociado a la dirección de envio del cliente"; \r\n' +
+      '"codigounidadnegocio": "Código unidad de negocio del despacho"; \r\n' +
+      '"transporteId": "FK transporte"; \r\n' +
+      '"numeroPedido": "Número identificador del pedido"; \r\n' +
+      '"estado": "Estado asociado al despacho"; \r\n' +
+      '"departamento": "Departamento asociado a la dirección de envio del cliente"; \r\n' +
+      '"codigoAplicacion": "Código de la aplicación cuando requiera consultar una entidad de una aplicación especifica"; \r\n' +
+      '"clienteId": "fk cliente"; \r\n' +
+      '"observaciones": "Observaciones del proceso"; \r\n' +
+      '"motivoReasignacion": "Motivo para la reasignacion o redistribución\\nDañado\\nSin existencias"; \r\n' +
+      '"origenNovedad": "Origen de la novedad\\nSeparación\\nPicking\\nPacking\\nShipping"; \r\n' +
+      '"estadoInterunidad": "Estado en el que se encuentra la mercancía cuando es transferida\\nC=Cancelado\\nI=En transito\\nO=Abierto\\nP=Acopiado\\nR=Recibido"; \r\n' +
+      '"estadoPea": "Estado de la PEA (Pre-advise Entry Advice)  "Aviso Previo de Entrada"\\nReservado\\nAcopiado\\nConfirmado\\nEnviado\\nDeducido\\nCancelado"; \r\n' +
+      '"coordenadaX": "Valor de la coordenada "Y" de la georefenciación del cliente (Latitud)"; \r\n' +
+      '"telefono": "Número de telefono del cliente al cual se le realizará la entrega"; \r\n' +
+      '"direccion": "Dirección de envio del cliente o la dirección del lugar donde el cliente va a retirar los productos."; \r\n' +
+      '"ciudad": "Corresponde al nombre de la ciudad de la dirección de envio del cliente"; \r\n' +
+      '"codigoCiudad": "Corresponde al codigo del DANE de la ciudad de la dirección de envio del cliente"; \r\n' +
+      '"fechaT'... 30431 more characters
+  },
+  {
+    role: 'user',
+    content: 'Sobre que entidad Despachos o Pedidos se debe dejar el estado del  e-commerce el estado "Facturado" ?'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. \n' +
+      '\t\tObtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..\n' +
+      '\n' +
+      '```\n' +
+      ' \r\n' +
+      'Entidad: materiales.\r\n' +
+      'Descripcion Entidad: Modelo canónico para la consulta de los modelos y partes con su respectivo costo y cantidad.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.materiales\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"costo": "Costo asociado a el articulo o parte del Modelo"; \r\n' +
+      '"cantidad": "Cantidad de inventario de artículos o partes que componen el modelo"; \r\n' +
+      '"codigoFamilia": "Codigo de la familia de articulos"; \r\n' +
+      '"descripcionFamilia": "Descripción de la familia del Articulo o parte del modelo"; \r\n' +
+      '"unidad": "Unidad de medida para el articulo (UND, KIT, KG)"; \r\n' +
+      '"codigo": "Codigo unico asociado al Articulo o parte que conforma un modelo Ej EAN"; \r\n' +
+      '"articulo": "Nombre del Articulo o Parte que conforma un modelo"; \r\n' +
+      '"descripcion": "Detalle con la descripción del artículo o parte que conforma un modelo"; \r\n' +
+      '"unidadNegocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"modelo": "Nombre del modelo o agrupador de los articulos o partes"; \r\n' +
+      '"descripcionModelo": "Descripción del modelo o agrupador de las partes o artículos"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: producto.\r\n' +
+      'Descripcion Entidad: Modelo canonico para la entidad producto.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.producto\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"chasis": "Aplica para los productos de vehiculos"; \r\n' +
+      '"codigo_ean": "Atributo para identificar el producto"; \r\n' +
+      '"nombre_producto": "Codigo de EAN de identificación del producto"; \r\n' +
+      '"descripcion_producto": "Codigo asociado al producto"; \r\n' +
+      '"precio_venta": "Url donde se puede acceder a las imagenes del producto"; \r\n' +
+      '"precio_lista": "Valor final del producto"; \r\n' +
+      '"nombre_unidad_negocio": "Valor total del descuento aplicado al producto"; \r\n' +
+      '"unidad_negocio_id": "Valor final del producto"; \r\n' +
+      '"categoria_id": "Valor de los impuestos aplicados"; \r\n' +
+      '"estado": "Valor del porcentaje de descuento que se le puede aplicar al producto"; \r\n' +
+      '"url_producto": "Valor del precio original del producto"; \r\n' +
+      '"linea": "Valor de la cantidad de elementos del producto"; \r\n' +
+      '"marca": "Categoria del producto"; \r\n' +
+      '"url_imagen": "Descripcion del producto"; \r\n' +
+      '"productoId": "Atributo para identificar el producto"; \r\n' +
+      '"codigoEan": "Codigo de EAN de identificación del producto"; \r\n' +
+      '"codigoProducto": "Codigo asociado al producto"; \r\n' +
+      '"nombreProducto": "Nombre del producto"; \r\n' +
+      '"descripcionProducto": "Descripcion del producto"; \r\n' +
+      '"categoria": "Categoria del producto"; \r\n' +
+      '"cantidad": "Valor de la cantidad de elementos del producto"; \r\n' +
+      '"precioOriginal": "Valor del precio original del producto"; \r\n' +
+      '"porcentajeDescuento": "Valor del porcentaje de descuento que se le puede aplicar al producto"; \r\n' +
+      '"impuestos": "Valor de los impuestos aplicados"; \r\n' +
+      '"valorFinal": "Valor final del producto"; \r\n' +
+      '"valorDescuento": "Valor total del descuento aplicado al producto"; \r\n' +
+      '"valorProducto": "Valor final del producto"; \r\n' +
+      '"urlImagen": "Url donde se puede acceder a las imagenes del producto"; \r\n' +
+      '"costo": "Valor asociado al costo del producto"; \r\n' +
+      '"margenUtilidad": "Valor asociado al margen de utilidad del producto"; \r\n' +
+      '"especificaciones": "Especificaciones del producto"; \r\n' +
+      '"marca": "Marca asociada al producto"; \r\n' +
+      '"volumen": "Volumen del producto"; \r\n' +
+      '"peso": "Peso del producto en kilogramos"; \r\n' +
+      '"alto": "alto del producto"; \r\n' +
+      '"ancho": "Ancho del producto"; \r\n' +
+      '"profundidad": "Profundidad del prodcuto"; \r\n' +
+      '"centroCosto": "Centro de costos del producto"; \r\n' +
+      '"restringido": "Atributo para identificar si el producto esta restringido"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: usuarioPerfil.\r\n' +
+      'Descripcion Entidad: Modelo canonico que permite relacionar los perfiles a los diferentes usuarios.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.usuarioPerfil\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"estado": "Estado del perfil para el usuario"; \r\n' +
+      '"identificadorPerfil": "Atributo que permite identificar el perfil"; \r\n' +
+      '"nombreUsuario": "Nombre de usuario"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: ubicacionCliente.\r\n' +
+      'Descripcion Entidad: Modelo canonico para la entidad que tiene los atributos para la ubicación del cliente.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ubicacionCliente\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"direccionAlterna": "Atributo para registrar la dirección alterna o antigua del cliente"; \r\n' +
+      '"direccionActiva": "Atributo para identificar si la dirección de envio esta activa"; \r\n' +
+      '"codigoDireccion": "Código de la dirección del cliente"; \r\n' +
+      '"estadoGeoreferenciacion": "Determina la exactitud de la georeferenciacion"; \r\n' +
+      '"observaciones": "Campo para registrar la información adicional del cliente"; \r\n' +
+      '"clienteId": "atributo que permite identificar el cliente"; \r\n' +
+      '"direccionEnvio": "Direccion de envio principal"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: usuario.\r\n' +
+      'Descripcion Entidad: Modelo canonico para el manejo de los usuarios.\r\n' +
+      'URL de consulta de la entidad https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.usuario\r\n' +
+      'A continuacion entre las llaves se detallan los atributos de la entidad con su respectiva descripcion, cada atributo esta nombrado dentro de comillas dobles y  la descripcion esta despues de los dos puntos, la separacion entre los atributos de la entidad se identifica por punto y coma.\r\n' +
+      'Cuando en la descripcion de un atributo se tiene las letras "fk" o "FK" o "Fk" quiere decir que ese atributo esta relacionado a la entidad que esta en la descripcion por tanto este atributo puede contener los atributos de la otra entidad relacionada\r\n' +
+      '{\r\n' +
+      '"nombreUsuario": "Nombre de usuario asignado"; \r\n' +
+      '"usuarioId": "Llave primaria"; \r\n' +
+      '"transportadorId": "FK transportador"; \r\n' +
+      '"contrasenaRed": "Contraseña de red si/no"; \r\n' +
+      '"basesDatos": "Bases de datos a la cual tiene acceso el usuario\\nejemplo: bases de datos de clientes para contacto mediante el CRM"; \r\n' +
+      '"apellidos": "Apellidos de los usuarios"; \r\n' +
+      '"nombres": "Nombres completos del usuario"; \r\n' +
+      '"clave": "Calve del usuario"; \r\n' +
+      '"aplicacionDestino": "Corresponde al lugar donde se encuentra  alojado aplicación o el tipo de aplicacion a la cual se le va a gestionar el usuario"; \r\n' +
+      '"unidadNegocio": "Esto corresponde al nombre de cada una de las unidades de negocio de la compañía, Alkosto, Alkomprar, AKT, Distribuciones, Fotón"; \r\n' +
+      '"codigoUnidadNegocio": "Código que permite identificar la unidad de negocio"; \r\n' +
+      '"almacen": "En este campo se parametriza para algunos perfiles la unidad de venta a la que pertenecen, ejemplo (AKFLO,ALBUC, ALCA6 etc)"; \r\n' +
+      '"area": "Área a la que corresponde el usuario ejemplo (Cartera-SAC-Telemercadeo)"; \r\n' +
+      '"perfil": "Perfil asignado al usuario"; \r\n' +
+      '"estado": "Estado del usuario (Activo, Inactivo)"; \r\n' +
+      '"codigoEmpleado": "Código del empleado \\nPersonal External Id"; \r\n' +
+      '"usuarioVicidial": "Es el usuario en ViciDial, cuando aplica, importante para los asesores de los call center"; \r\n' +
+      '"identificacion": "Documento de identificación del usuario"; \r\n' +
+      '"fechaFinContrato": "Fecha de finalización de contrato para usuarios a término fijo o externos, para los usuarios a término indefinido se encuentra como 0000/00/00 \\n Formato de la Fecha YYYY-MM-DD"; \r\n' +
+      '"correoElectronico": "Correo electrónico del usuario"\r\n' +
+      '}\r\n' +
+      '\r\n' +
+      ' \r\n' +
+      'Entidad: vendedor.\r\n' +
+      'Descripcion'... 38652 more characters
+  },
+  {
+    role: 'user',
+    content: 'cuales entidades pueden tener propósitos similares dentro del modelo canonico definido '
+  }
+]

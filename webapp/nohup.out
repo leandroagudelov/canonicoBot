@@ -1,0 +1,205 @@
+
+> docsbot@0.0.1 preview
+> vite preview "--host" "0.0.0.0" "--port" "4173"
+
+
+  ➜  Local:   http://localhost:4173/
+  ➜  Network: http://10.1.1.4:4173/
+[
+  {
+    role: 'system',
+    content: 'You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. \n' +
+      '\t\tYou get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.\n' +
+      '\n' +
+      '```\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: recorrido | Descripcion: Recorrido realizado en el viaje | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: observaciones | Descripcion: Campo de observaciones | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: estadoSeguimiento | Descripcion: Atributo para identificar el estado del seguimiento | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: comprometidos | Descripcion tabla: Entidad que permite registrar los comprometidos asociados a la orden de trabajo | Atributo: numeroOrden | Descripcion: Número de la orden de trabajo | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.comprometidos\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: distanciaRecorrida | Descripcion: Distancia total recorrida en KM | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: comprometidos | Descripcion tabla: Entidad que permite registrar los comprometidos asociados a la orden de trabajo | Atributo: codigoEan | Descripcion: Ean de parte/servicio solicitado | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.comprometidos\r\n' +
+      '\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: codigoIntegracion | Descripcion: Corresponde a  Metodo de integración del servicio. Valor fijo 6 | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: codigoOperacion | Descripcion: Código asignado a la operación | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: cuentaPaquetera | Descripcion: Id de cuenta de la pquetera para asignación de pagos | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: sucursal | Descripcion: Nombre sucursal | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      '```\n' +
+      '\n' +
+      'The user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.'
+  },
+  {
+    role: 'user',
+    content: 'Cual entidad canonica se puede identificar para registrar el recibo de devoluciones'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. \n' +
+      '\t\tYou get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.\n' +
+      '\n' +
+      '```\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: recorrido | Descripcion: Recorrido realizado en el viaje | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: observaciones | Descripcion: Campo de observaciones | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: estadoSeguimiento | Descripcion: Atributo para identificar el estado del seguimiento | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: comprometidos | Descripcion tabla: Entidad que permite registrar los comprometidos asociados a la orden de trabajo | Atributo: numeroOrden | Descripcion: Número de la orden de trabajo | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.comprometidos\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: distanciaRecorrida | Descripcion: Distancia total recorrida en KM | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: comprometidos | Descripcion tabla: Entidad que permite registrar los comprometidos asociados a la orden de trabajo | Atributo: codigoEan | Descripcion: Ean de parte/servicio solicitado | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.comprometidos\r\n' +
+      '\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: codigoIntegracion | Descripcion: Corresponde a  Metodo de integración del servicio. Valor fijo 6 | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: codigoOperacion | Descripcion: Código asignado a la operación | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: cuentaPaquetera | Descripcion: Id de cuenta de la pquetera para asignación de pagos | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      'Entidad: viaje | Descripcion tabla: Entida que permite registrar los viajes registrados en el TMS | Atributo: sucursal | Descripcion: Nombre sucursal | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.viaje\r\n' +
+      '```\n' +
+      '\n' +
+      'The user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.'
+  },
+  {
+    role: 'user',
+    content: 'Cual entidad canonica se puede identificar para registrar el recibo de devoluciones'
+  }
+]
+
+> docsbot@0.0.1 preview
+> vite preview "--host" "0.0.0.0" "--port" "4173"
+
+
+  ➜  Local:   http://localhost:4173/
+  ➜  Network: http://10.1.1.4:4173/
+[
+  {
+    role: 'system',
+    content: 'You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. \n' +
+      '\t\tYou get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.\n' +
+      '\n' +
+      '```\n' +
+      'Entidad: ubicacionProducto | Descripcion tabla: Entidad que registra las ubicaciones de los productos dentro de la tienda o bodegas | Atributo: inventarioId | Descripcion: Identificador del inventario del producto que esta en la Ubicación | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ubicacionProducto\r\n' +
+      'Entidad: ubicacionProducto | Descripcion tabla: Entidad que registra las ubicaciones de los productos dentro de la tienda o bodegas | Atributo: codigoProveedor | Descripcion: Código del proveedor | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ubicacionProducto\r\n' +
+      'Entidad: producto | Descripcion tabla: Modelo canonico para la entidad producto | Atributo: estado | Descripcion: Valor del porcentaje de descuento que se le puede aplicar al producto | Tipo dato:  | bool | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.producto\r\n' +
+      'Entidad: ubicacionProducto | Descripcion tabla: Entidad que registra las ubicaciones de los productos dentro de la tienda o bodegas | Atributo: codigoUnidadNegocio | Descripcion: Código de unidad de negocio | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ubicacionProducto\r\n' +
+      'Entidad: inventario | Descripcion tabla: Entidad para registrar los inventarios de los productos | Atributo: codigoEan | Descripcion: Código que identifica al producto o artículo | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.inventario\r\n' +
+      'Entidad: ubicacionProducto | Descripcion tabla: Entidad que registra las ubicaciones de los productos dentro de la tienda o bodegas | Atributo: nombreProveedor | Descripcion: Nombre del proveedor | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ubicacionProducto\r\n' +
+      'Entidad: paradaProducto | Descripcion tabla: Entidad que registra los producto de cada una de las paradas | Atributo: peso | Descripcion: peso total de la parada (suma del peso de todos los ítems)  unidad KG | Tipo dato:  | Double | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.paradaProducto\r\n' +
+      'Entidad: producto | Descripcion tabla: Modelo canonico para la entidad producto | Atributo: peso | Descripcion: Peso del producto en kilogramos | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.producto\r\n' +
+      'Entidad: producto | Descripcion tabla: Modelo canonico para la entidad producto | Atributo: porcentajeDescuento | Descripcion: Valor del porcentaje de descuento que se le puede aplicar al producto | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.producto\r\n' +
+      'Entidad: inventario | Descripcion tabla: Entidad para registrar los inventarios de los productos | Atributo: unidad | Descripcion: Unidad de medida para el articulo (UND, KIT, KG) | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.inventario\r\n' +
+      '```\n' +
+      '\n' +
+      'The user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.'
+  },
+  {
+    role: 'user',
+    content: 'cual entidad se puede emplear para almacenar las devoluciones de productos'
+  }
+]
+
+> docsbot@0.0.1 preview
+> vite preview "--host" "0.0.0.0" "--port" "4173"
+
+
+  ➜  Local:   http://localhost:4173/
+  ➜  Network: http://10.1.1.4:4173/
+[
+  {
+    role: 'system',
+    content: 'You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. \n' +
+      '\t\tYou get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.\n' +
+      '\n' +
+      '```\n' +
+      'Entidad: autorizacionDatosPersonales | Descripcion tabla: Contiene la información de autorización de uso de los datos personales de un cliente. | Atributo: sistemaOrigenPeticion | Descripcion: Sistema cliente que realiza la petición de consulta. | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.autorizacionDatosPersonales\r\n' +
+      'Entidad: autorizacionDatosPersonales | Descripcion tabla: Contiene la información de autorización de uso de los datos personales de un cliente. | Atributo: clienteId | Descripcion: fk cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.autorizacionDatosPersonales\r\n' +
+      'Entidad: cliente | Descripcion tabla: entidad que registra la información del cliente | Atributo: horarioAtencion | Descripcion: Horario de atención en el cual se puede contactar el cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'Entidad: autorizacionDatosPersonales | Descripcion tabla: Contiene la información de autorización de uso de los datos personales de un cliente. | Atributo: apellidosCliente | Descripcion: Apellidos del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.autorizacionDatosPersonales\r\n' +
+      'Entidad: cliente | Descripcion tabla: entidad que registra la información del cliente | Atributo: horario_atencion | Descripcion: Horario de atención en el cual se puede contactar el cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'Entidad: autorizacionDatosPersonales | Descripcion tabla: Contiene la información de autorización de uso de los datos personales de un cliente. | Atributo: telefonoCelularCliente | Descripcion: Número de teléfono celular del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.autorizacionDatosPersonales\r\n' +
+      'Entidad: autorizacionDatosPersonales | Descripcion tabla: Contiene la información de autorización de uso de los datos personales de un cliente. | Atributo: canalAutorizacion | Descripcion: Canal de autorización. Valores permitidos: Presencial / Web / Call | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.autorizacionDatosPersonales\r\n' +
+      'Entidad: autorizacionDatosPersonales | Descripcion tabla: Contiene la información de autorización de uso de los datos personales de un cliente. | Atributo: correoElectronicoCliente | Descripcion: Correo electrónico registrado del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.autorizacionDatosPersonales\r\n' +
+      'Entidad: cliente | Descripcion tabla: entidad que registra la información del cliente | Atributo: empleado | Descripcion: Atributo para identificar si el cliente es empleado | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      'Entidad: cliente | Descripcion tabla: entidad que registra la información del cliente | Atributo: empleado | Descripcion: Atributo para identificar si el cliente es empleado | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.cliente\r\n' +
+      '```\n' +
+      '\n' +
+      'The user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.'
+  },
+  {
+    role: 'user',
+    content: 'cual entidad se puede emplear para almacenar las conversaciones de los clientes'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. \n' +
+      '\t\tYou get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.\n' +
+      '\n' +
+      '```\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: profesion | Descripcion: Profesión del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: observaciones | Descripcion: Campo para registrar la información adicional del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: arriendoMensual | Descripcion: Valor total del arriendo mensual del cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: nivelEducativo | Descripcion: Atributo para registrar el nivel educativo del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: ubicacionCliente | Descripcion tabla: Modelo canonico para la entidad que tiene los atributos para la ubicación del cliente | Atributo: observaciones | Descripcion: Campo para registrar la información adicional del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ubicacionCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: otrosIngresos | Descripcion: Valor de otros ingresos del cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: estadoCivil | Descripcion: Estado civil del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: estrato | Descripcion: Atributo para registrar el estrato social del cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: clienteId | Descripcion: atributo que permite identificar el cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: tipoRegimen | Descripcion: Tipo régimen | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      '```\n' +
+      '\n' +
+      'The user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.'
+  },
+  {
+    role: 'user',
+    content: 'cual entidad se puede emplear para almacenar las conversaciones de los clientes tomar como fuente la informacion del canonico enviada'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. \n' +
+      '\t\tYou get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.\n' +
+      '\n' +
+      '```\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: profesion | Descripcion: Profesión del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: ubicacionCliente | Descripcion tabla: Modelo canonico para la entidad que tiene los atributos para la ubicación del cliente | Atributo: observaciones | Descripcion: Campo para registrar la información adicional del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ubicacionCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: arriendoMensual | Descripcion: Valor total del arriendo mensual del cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: observaciones | Descripcion: Campo para registrar la información adicional del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: otrosIngresos | Descripcion: Valor de otros ingresos del cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: nivelEducativo | Descripcion: Atributo para registrar el nivel educativo del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: empleado | Descripcion: Atributo para identificar si el cliente es empleado\\nSI / NO | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: clienteId | Descripcion: atributo que permite identificar el cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: estadoCivil | Descripcion: Estado civil del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: clienteInstitucional | Descripcion: Atributo para identificar si el cliente es institucional\\nSI / NO | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      '```\n' +
+      '\n' +
+      'The user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.'
+  },
+  {
+    role: 'user',
+    content: 'cual entidad se puede emplear para almacenar las conversaciones de los clientes tomar como fuente la informacion del canonico enviada mostrar resultado en json'
+  }
+]
+[
+  {
+    role: 'system',
+    content: 'You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. \n' +
+      '\t\tYou get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.\n' +
+      '\n' +
+      '```\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: profesion | Descripcion: Profesión del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: ubicacionCliente | Descripcion tabla: Modelo canonico para la entidad que tiene los atributos para la ubicación del cliente | Atributo: observaciones | Descripcion: Campo para registrar la información adicional del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.ubicacionCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: arriendoMensual | Descripcion: Valor total del arriendo mensual del cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: observaciones | Descripcion: Campo para registrar la información adicional del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: otrosIngresos | Descripcion: Valor de otros ingresos del cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: nivelEducativo | Descripcion: Atributo para registrar el nivel educativo del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: empleado | Descripcion: Atributo para identificar si el cliente es empleado\\nSI / NO | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: clienteId | Descripcion: atributo que permite identificar el cliente | Tipo dato:  | Number | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: estadoCivil | Descripcion: Estado civil del cliente | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      'Entidad: detalleCliente | Descripcion tabla: Modelo canonico para la entidad de cliente con el detalle e informacion adicional del cliente | Atributo: clienteInstitucional | Descripcion: Atributo para identificar si el cliente es institucional\\nSI / NO | Tipo dato:  | varchar | https://colcomerciocom.sharepoint.com/sites/Intranet/sdarquitectura/ArquitecturaEmpresarial/Paginas/Modelo%20l%C3%B3gico%20de%20datos.aspx#canonico.detalleCliente\r\n' +
+      '```\n' +
+      '\n' +
+      'The user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.'
+  },
+  {
+    role: 'user',
+    content: 'cual entidad se puede emplear para almacenar las conversaciones de los clientes tomar como fuente la informacion del canonico enviada mostrar resultado en json'
+  }
+]

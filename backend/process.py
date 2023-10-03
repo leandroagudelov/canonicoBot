@@ -68,5 +68,5 @@ def query_collection(query):
     collection = chroma_client.get_or_create_collection(name="docs_canonico_collection")
     return collection.query(
         query_texts=[query],
-        n_results=10,
+        n_results=20,
     )

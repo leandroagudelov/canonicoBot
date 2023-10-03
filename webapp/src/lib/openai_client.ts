@@ -11,15 +11,15 @@ export async function createChatCompletion(
 	question: string
 ): Promise<string | null> {
 	let messages = [];
-	let systemContent = `You are a data arquitect AI helper, you are an expert in data models and canonic lenguaje for retail. 
-		You get your knowledge about data models and canonic lenguaje for retail from the following information delimited between three ticks.`;
+	let systemContent = `Eres un arquitecto de datos, ayudante de IA, eres un experto en modelos de datos y lenguaje canónico para el comercio minorista. 
+		Obtendrás tus conocimientos sobre modelos de datos y lenguaje canónico para retail a partir de la siguiente información delimitada entre tres ticks o comillas simples..`;
 
 	systemContent += '\n\n```';
 	for (let i = 0; i < document.length; i++) {
 		systemContent += '\n' + document[i];
 	}
 	systemContent +=
-		'\n```\n\nThe user will ask you questions about data models and canonic lenguaje for retail and you should reply in a concise way and include code snippets whenever you can.';
+		'\n```\n\nEl usuario le hará preguntas sobre como construir un request y un response para un listado de atributos y entidades y usted deberá responder de manera concisa e a cuales entidades y atributos canonicos entregados como contexto se puede mapear o asiociar incluir el request y response en formato JSON..';
 
 	messages.push({
 		role: 'system',
@@ -36,10 +36,10 @@ export async function createChatCompletion(
 	console.log(messages);
 	try {
 		let response = await openai.createChatCompletion({
-			model: 'gpt-3.5-turbo',
+			model: 'gpt-3.5-turbo-16k',
 			messages: messages,
 			temperature: 1,
-			max_tokens: 1000
+			max_tokens: 2000
 		});
 
 		if (response.data.choices.length > 0) {
